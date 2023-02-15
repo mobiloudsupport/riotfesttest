@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://rftv.riotfest.org/xmlrpc.php">
+    <link media="all" href="https://rftv.riotfest.org/wp-content/cache/autoptimize/css/autoptimize_8390e2fd9180e8f65f64d3bc916ac173.css" rel="stylesheet" />
+    <title>RFTV</title>
+    <meta name='robots' content='noindex, nofollow' />
+    <script type='text/javascript' src='https://rftv.riotfest.org/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+    <script type='text/javascript' id='c9_blocks-frontend-js-extra'>
+      var c9_blocks_params = {
+        "disable_youtube_api": "true"
+      };
+    </script>
+    <link rel="https://api.w.org/" href="https://rftv.riotfest.org/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://rftv.riotfest.org/wp-json/wp/v2/pages/5" />
+    <link rel="canonical" href="https://rftv.riotfest.org/" />
+    <link rel="alternate" type="application/json+oembed" href="https://rftv.riotfest.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frftv.riotfest.org%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://rftv.riotfest.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frftv.riotfest.org%2F&#038;format=xml" />
+    <script>
+      if (!document.documentElement.className.match(/\bwf-/)) document.documentElement.classList.add('wf-loading')
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-TP48QJV');
+    </script>
+    <link rel="icon" href="https://rftv.riotfest.org/wp-content/uploads/2023/01/cropped-riot-fest-logo-stacked-2022b-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://rftv.riotfest.org/wp-content/uploads/2023/01/cropped-riot-fest-logo-stacked-2022b-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://rftv.riotfest.org/wp-content/uploads/2023/01/cropped-riot-fest-logo-stacked-2022b-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://rftv.riotfest.org/wp-content/uploads/2023/01/cropped-riot-fest-logo-stacked-2022b-270x270.png" />
+  </head>
+
+  <body class="theme-c9 c9 page-template-blank">
+    <div class="entry-content">
+      <div class="zombieblocker"></div>
+      <div class="c9-grid poweroff c9-scroll" style="min-height:20vh" id="rftvplayer">
+        <div class="container c9-column-container c9-scroll c9-layout-columns-1 one-column">
+          <div class="c9-layout-column-wrap c9-block-layout-column-gap-2 c9-is-responsive-column">
+            <div class="c9-block-layout-column c9-column text-left">
+              <div class="c9-column-innner">
+                <h6 class="has-color-light-color has-text-color" id="videoTitle">Video Title</h6>
+                <div id="player"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="is-content-justification-center is-layout-flex wp-container-1 wp-block-buttons btncontrols hideme">
+        <div class="wp-block-button btnfit is-style-fill"><a class="wp-block-button__link has-color-info-color has-text-color wp-element-button"><i class="fa fa-compress"></i></a></div>
+        <div class="wp-block-button is-style-fill" id="time-remaining"><a class="wp-block-button__link has-color-info-color has-text-color wp-element-button">HH:MM:SS</a></div>
+        <div class="wp-block-button btnpauseplay is-style-fill"><a class="wp-block-button__link has-color-info-color has-text-color wp-element-button"><i class="fa fa-pause"></i></a></div>
+        <div class="wp-block-button btnskip is-style-fill"><a class="wp-block-button__link has-color-info-color has-text-color wp-element-button"><i class="fa fa-step-forward"></i></a></div>
+        <div class="wp-block-button btncc is-style-fill"><a class="wp-block-button__link has-color-info-color has-text-color wp-element-button"><i class="fa fa-cc"></i><span class="sr-only">Closed Captions</span></a></div>
+        <div class="wp-block-button btnmute is-style-fill"><a class="wp-block-button__link has-color-info-color has-text-color wp-element-button"><i class="fa fa-volume-up"></i><span class="sr-only">MUTE</span></a></div>
+        <div class="wp-block-button channelUp"><a class="wp-block-button__link wp-element-button" href="#"><i class="fa fa-arrow-up"></i><span class="sr-only">channel up</span></a></div>
+        <div class="wp-block-button channelDown"><a class="wp-block-button__link wp-element-button" href="#"><i class="fa fa-arrow-down"></i><span class="sr-only">Channel Down</span></a></div>
+      </div>
+      <div id="channelTitle" class="section-heading c9-heading text-left">
+        <h1 class="c9-sh" style="color:#62ff00">Ch00</h1>
+        <div class="c9-sh subhead-h1"><small class="text-muted" style="color:#62ff00">&nbsp;Channel Title</small></div>
+      </div>
+      <div class="is-content-justification-center is-layout-flex wp-container-2 wp-block-buttons poweron">
+        <div class="wp-block-button has-custom-font-size btnplay hideme has-xx-large-font-size"><a class="wp-block-button__link wp-element-button" href="#"><i class="fa fa-play-circle"></i></a></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function c9BlocksShare(url, title, w, h) {
+        var left = (window.innerWidth / 2) - (w / 2);
+        var top = (window.innerHeight / 2) - (h / 2);
+        return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=600, top=' + top + ', left=' + left);
+      }
+    </script>
+    <style id='core-block-supports-inline-css' type='text/css'>
+      .wp-block-buttons.wp-container-1,
+      .wp-block-buttons.wp-container-2 {
+        justify-content: center;
+      }
+    </style>
+    <script defer src="https://rftv.riotfest.org/wp-content/cache/autoptimize/js/autoptimize_cdd9f542de1a32a9c8af8b8b4028fa89.js"></script>
+  </body>
+
+</html>
